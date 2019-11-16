@@ -1,5 +1,35 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Valor por cuota</h2>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-10">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Cuota</th>
+            <th scope="col">Normal</th>
+            <th scope="col">Precio A</th>
+            <th scope="col">Precio AyR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let cuota of cuotas">
+            <th scope="row">{{ cuota.cuota }}</th>
+            <td>{{ cuota.interes * precioTel }}</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col"></div>
+  </div>
+</div>
+
 <div>
-  <h3>Prueba completa</h3>
   <button type="button" class="btn btn-success" (click)="volver()">
     Volver
   </button>

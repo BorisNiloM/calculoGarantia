@@ -1,6 +1,22 @@
-<div>
-  <h3>Esto es una prueba</h3>
-  <button type="button" class="btn btn-primary" (click)="calcular()">
-    Calcular
-  </button>
+<div class="container justify-content-around">
+  <div class="form-group row">
+    <div class="col-xs-5">
+      <label for="precioTelefono">Precio Telefono </label>
+    </div>
+
+    <div class="col-xs-5">
+      <input
+        type="number"
+        class="form-control"
+        id="precioTelefono"
+        placeholder="Ingresar Valor"
+        #precioTel
+      />
+    </div>
+  </div>
+  <div class="col">
+    <button class="btn btn-primary" (click)="calcular(precioTel.value)">
+      Calcular
+    </button>
+  </div>
 </div>

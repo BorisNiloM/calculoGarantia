@@ -10,8 +10,8 @@ export class EntradaComponent implements OnInit {
 
   ngOnInit() {}
 
-  calcular() {
-    console.log("funciona");
-    this.router.navigate(["/tabla"]);
+  calcular(precioTel: number) {
+    console.log(precioTel);
+    this.router.navigate(["/tabla", precioTel]);
   }
 }

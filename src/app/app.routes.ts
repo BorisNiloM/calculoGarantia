@@ -4,7 +4,7 @@ import { TablaComponent } from "./components/tabla/tabla.component";
 
 const APP_ROUTES: Routes = [
   { path: "entrada", component: EntradaComponent },
-  { path: "tabla", component: TablaComponent },
+  { path: "tabla/:precioTel", component: TablaComponent },
   { path: "**", pathMatch: "full", redirectTo: "entrada" }
 ];
 
