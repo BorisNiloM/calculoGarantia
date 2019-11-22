@@ -7,9 +7,6 @@ import { APP_ROUTING } from "./app.routes";
 //Serivicios
 import { CalculosService } from "./servicio/calculos.service";
 
-//Pipes
-import { Plan2Pipe } from "./pipes/plan2.pipe";
-
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/shared/navbar/navbar.component";
 import { EntradaComponent } from "./components/entrada/entrada.component";
@@ -24,8 +21,7 @@ registerLocaleData(localesEs);
     AppComponent,
     NavbarComponent,
     EntradaComponent,
-    TablaComponent,
-    Plan2Pipe
+    TablaComponent
   ],
   imports: [APP_ROUTING, BrowserModule],
   providers: [CalculosService, { provide: LOCALE_ID, useValue: "es" }],
