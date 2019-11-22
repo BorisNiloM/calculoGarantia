@@ -14,6 +14,7 @@ import { TablaComponent } from "./components/tabla/tabla.component";
 
 import localesEs from "@angular/common/locales/es";
 import { registerLocaleData } from "@angular/common";
+import { FooterComponent } from './components/footer/footer.component';
 registerLocaleData(localesEs);
 
 @NgModule({
@@ -21,7 +22,8 @@ registerLocaleData(localesEs);
     AppComponent,
     NavbarComponent,
     EntradaComponent,
-    TablaComponent
+    TablaComponent,
+    FooterComponent
   ],
   imports: [APP_ROUTING, BrowserModule],
   providers: [CalculosService, { provide: LOCALE_ID, useValue: "es" }],

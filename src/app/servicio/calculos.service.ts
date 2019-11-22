@@ -88,25 +88,25 @@ export class CalculosService {
     } else if (parseInt(precio) < 100000) {
       return parseInt(precio) + 28990;
     } else if (parseInt(precio) < 150000) {
-      return parseInt(precio) + 35990;
+      return parseInt(precio) + 39990;
     } else if (parseInt(precio) < 200000) {
-      return parseInt(precio) + 49990;
+      return parseInt(precio) + 53990;
     } else if (parseInt(precio) < 300000) {
-      return parseInt(precio) + 69990;
+      return parseInt(precio) + 79990;
     } else if (parseInt(precio) < 400000) {
       return parseInt(precio) + 99990;
     } else if (parseInt(precio) < 500000) {
       return parseInt(precio) + 109990;
     } else if (parseInt(precio) < 600000) {
-      return parseInt(precio) + 129990;
+      return parseInt(precio) + 139990;
     } else if (parseInt(precio) < 700000) {
-      return parseInt(precio) + 149990;
+      return parseInt(precio) + 159990;
     } else if (parseInt(precio) < 800000) {
       return parseInt(precio) + 169990;
     } else if (parseInt(precio) < 900000) {
-      return parseInt(precio) + 189990;
+      return parseInt(precio) + 219990;
     } else if (parseInt(precio) < 1000000) {
-      return parseInt(precio) + 199990;
+      return parseInt(precio) + 239990;
     }
     return precio;
   }
@@ -133,9 +133,9 @@ export class CalculosService {
     } else if (parseInt(precio) < 400000) {
       return parseInt(precio) + 109990;
     } else if (parseInt(precio) < 500000) {
-      return parseInt(precio) + 134990;
+      return parseInt(precio) + 139990;
     } else if (parseInt(precio) < 600000) {
-      return parseInt(precio) + 169990;
+      return parseInt(precio) + 179990;
     } else if (parseInt(precio) < 700000) {
       return parseInt(precio) + 199990;
     } else if (parseInt(precio) < 800000) {
