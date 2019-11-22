@@ -1,5 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
-import { NgModule } from "@angular/core";
+import { LOCALE_ID, NgModule } from "@angular/core";
 
 //Rutas
 import { APP_ROUTING } from "./app.routes";
@@ -7,20 +7,28 @@ import { APP_ROUTING } from "./app.routes";
 //Serivicios
 import { CalculosService } from "./servicio/calculos.service";
 
+//Pipes
+import { Plan2Pipe } from "./pipes/plan2.pipe";
+
 import { AppComponent } from "./app.component";
 import { NavbarComponent } from "./components/shared/navbar/navbar.component";
 import { EntradaComponent } from "./components/entrada/entrada.component";
 import { TablaComponent } from "./components/tabla/tabla.component";
+
+import localesEs from "@angular/common/locales/es";
+import { registerLocaleData } from "@angular/common";
+registerLocaleData(localesEs);
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     EntradaComponent,
-    TablaComponent
+    TablaComponent,
+    Plan2Pipe
   ],
   imports: [APP_ROUTING, BrowserModule],
-  providers: [CalculosService],
+  providers: [CalculosService, { provide: LOCALE_ID, useValue: "es" }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
 import { CalculosService } from "../../servicio/calculos.service";
 
@@ -15,13 +15,22 @@ export class TablaComponent implements OnInit {
 
   precioTel: number;
   cuotas: any[];
+  precioPlan2: number;
+  precioPlan1: number;
 
   ngOnInit() {
     this.activatedRoute.params.subscribe(
       params => (this.precioTel = params["precioTel"])
     );
+    console.log(typeof this.precioTel);
+
     this.cuotas = this._calculosService.getIntereses();
     console.log(this.cuotas);
+
+    this.precioPlan2 = this._calculosService.garantiaPlan2(this.precioTel);
+    console.log(typeof this.precioPlan2);
+
+    this.precioPlan1 = this._calculosService.garantiaPlan1(this.precioTel);
   }
 
   volver() {

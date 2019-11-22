@@ -18,9 +18,15 @@
         <tbody>
           <tr *ngFor="let cuota of cuotas">
             <th scope="row">{{ cuota.cuota }}</th>
-            <td>{{ cuota.interes * precioTel }}</td>
-            <td>Otto</td>
-            <td>@mdo</td>
+            <td>
+              {{ (cuota.interes / cuota.cuota) * precioTel | number: ".0-0" }}
+            </td>
+            <td>
+              {{ (cuota.interes / cuota.cuota) * precioPlan2 | number: ".0-0" }}
+            </td>
+            <td>
+              {{ (cuota.interes / cuota.cuota) * precioPlan1 | number: ".0-0" }}
+            </td>
           </tr>
         </tbody>
       </table>
