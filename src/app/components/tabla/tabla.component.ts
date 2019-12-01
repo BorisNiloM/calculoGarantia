@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Router, ActivatedRoute } from "@angular/router";
 import { CalculosService } from "../../servicio/calculos.service";
+import { NgForm } from "@angular/forms";
 
 @Component({
   selector: "app-tabla",
@@ -22,7 +23,6 @@ export class TablaComponent implements OnInit {
     this.activatedRoute.params.subscribe(
       params => (this.precioTel = params["precioTel"])
     );
-    console.log(typeof this.precioTel);
 
     this.cuotas = this._calculosService.getIntereses();
     console.log(this.cuotas);

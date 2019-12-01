@@ -14,7 +14,7 @@ import { TablaComponent } from "./components/tabla/tabla.component";
 
 import localesEs from "@angular/common/locales/es";
 import { registerLocaleData } from "@angular/common";
-import { FooterComponent } from './components/footer/footer.component';
+import { FooterComponent } from "./components/footer/footer.component";
 registerLocaleData(localesEs);
 
 @NgModule({

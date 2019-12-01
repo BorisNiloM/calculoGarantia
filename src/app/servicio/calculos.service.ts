@@ -14,51 +14,51 @@ export class CalculosService {
 
     {
       cuota: 3,
-      interes: 1.06161
+      interes: 1.0561
     },
     {
       cuota: 4,
-      interes: 1.07688
+      interes: 1.07044
     },
     {
       cuota: 5,
-      interes: 1.09271
+      interes: 1.08493
     },
     {
       cuota: 6,
-      interes: 1.10869
+      interes: 1.09952
     },
     {
       cuota: 7,
-      interes: 1.12482
+      interes: 1.11426
     },
     {
       cuota: 8,
-      interes: 1.14109
+      interes: 1.129104
     },
     {
       cuota: 10,
-      interes: 1.1741
+      interes: 1.15918
     },
     {
       cuota: 12,
-      interes: 1.2077
+      interes: 1.15295
     },
     {
       cuota: 15,
-      interes: 1.25923
+      interes: 1.23664
     },
     {
       cuota: 18,
-      interes: 1.31208
+      interes: 1.28458
     },
     {
       cuota: 24,
-      interes: 1.42172
+      interes: 1.38373
     },
     {
       cuota: 36,
-      interes: 1.65633
+      interes: 1.59514
     },
     {
       cuota: 48,
