@@ -9,52 +9,52 @@ export class CalculosService {
     },
     {
       cuota: 2,
-      interes: 1.03962
+      interes: 1.05462
     },
 
     {
       cuota: 3,
-      interes: 1.0561
+      interes: 1.06141
     },
     {
       cuota: 4,
-      interes: 1.07044
+      interes: 1.07714
     },
     {
       cuota: 5,
-      interes: 1.08493
+      interes: 1.09302
     },
     {
       cuota: 6,
-      interes: 1.09952
+      interes: 1.10905
     },
     {
       cuota: 7,
-      interes: 1.11426
+      interes: 1.12524
     },
     {
       cuota: 8,
-      interes: 1.129104
+      interes: 1.14157
     },
     {
       cuota: 10,
-      interes: 1.15918
+      interes: 1.17470
     },
     {
       cuota: 12,
-      interes: 1.15295
+      interes: 1.15291
     },
     {
       cuota: 15,
-      interes: 1.23664
+      interes: 1.26013
     },
     {
       cuota: 18,
-      interes: 1.28458
+      interes: 1.31319
     },
     {
       cuota: 24,
-      interes: 1.38373
+      interes: 1.42326
     },
     {
       cuota: 36,
@@ -107,6 +107,12 @@ export class CalculosService {
       return parseInt(precio) + 219990;
     } else if (parseInt(precio) < 1000000) {
       return parseInt(precio) + 239990;
+    } else if (parseInt(precio) < 1100000) {
+      return parseInt(precio) + 239990;
+    } else if (parseInt(precio) < 1200000) {
+      return parseInt(precio) + 269990;
+    } else if (parseInt(precio) < 1400000) {
+      return parseInt(precio) + 269990;
     }
     return precio;
   }
@@ -131,7 +137,7 @@ export class CalculosService {
     } else if (parseInt(precio) < 300000) {
       return parseInt(precio) + 89990;
     } else if (parseInt(precio) < 400000) {
-      return parseInt(precio) + 109990;
+      return parseInt(precio) + 119990;
     } else if (parseInt(precio) < 500000) {
       return parseInt(precio) + 139990;
     } else if (parseInt(precio) < 600000) {
@@ -144,6 +150,12 @@ export class CalculosService {
       return parseInt(precio) + 259990;
     } else if (parseInt(precio) < 1000000) {
       return parseInt(precio) + 299990;
+    } else if (parseInt(precio) < 1100000) {
+      return parseInt(precio) + 299990;
+    } else if (parseInt(precio) < 1200000) {
+      return parseInt(precio) + 359990;
+    } else if (parseInt(precio) < 1400000) {
+      return parseInt(precio) + 339990;
     }
     return precio;
   }
